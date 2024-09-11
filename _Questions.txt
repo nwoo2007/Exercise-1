@@ -1,0 +1,95 @@
+------------------
+Lesson 1 Exercises
+------------------
+
+1. Define the follow terms in a way you understand:
+  a. Top Down Development
+    Start with the general concept and repeadtedly break it down into its component parts 
+
+  b. Procedural Abstraction
+    Abstracting away from the details of that block of code and just using its name to do its job;  only need to know what it does 
+    Making a function / method work in general by adding parameters 
+      ex.   A function that adds 2 + 4 vs. a function that can add any two numbers, provided via arguments 
+
+  c. Call (as in function call)
+     Invoke the function; process of using a function 
+    ex.   showMenu() invokes the showMenu function 
+
+  d. Method Declaration
+    The first line in a function definition 
+        ex.    function addPoints(pts)
+
+  e. Method Body
+    A particular procedure / set of procedures that acts out the behavior
+    The code section of the function/method. 
+    In between {  }
+
+  f. Local Scope
+     These variables are defined within a function; doesn’t exist outside that block 
+
+  g. Argument
+    Data provided when calling / invoking a function 
+    Arguments = expressions / values
+      ex.   addNumbers(5, 10) 
+
+  h. Parameter
+    The function variable(s) where arguments get stored 
+    Parameters = Variables 
+      ex.    function addNumbers(x, y) 
+
+  ex.
+      function AddTwoNumbers(a,b) {
+        return a + b;     //  a and b are paramters 
+      }
+      
+      AddTwoNumbers(5,3);    // 5 and 3 are arguments
+
+
+2. Write some code that declares 2 variables that have different scopes.
+
+
+3. Write method declarations for the following:
+  a. A method called salutations that has no parameters.
+    function salutations() 
+
+  b. A method called getTaxRate that takes a province as a parameter.
+    function getTaxRate(prov) 
+
+  c. A method called cylVolume that shows the volume of a cylinder, given the height and radius of the base.
+    function cylToVolume(h, r) 
+
+4. Can two functions have the same name in JavaScript? Explain how or why not.
+  No, because if there's 2+ functions with the same name
+  Javascript will always run the last function definition
+
+5. Write a program that contains 3 method calls to addRoof(), addBase() and addWalk() to produce the image 'house.PNG' located in the files for this replit.
+
+6. The following formulas can be used to convert English units of measurements to metric units:
+  inches * 2.54 = centimeters
+  feet * 30 = centimeters
+  yards * 0.91 = meters
+  miles * 1.6 = kilometers
+
+  Create a Metric Conversion application that displays a menu of conversion choices and then prompts the user to choose a conversion. Conversion choices should include inches to centimeters, feet to centimeters, yards to meters, miles to kilometers, and vice versa. The application should include separate functions for each conversion. See the image 'metricConversion.PNG' for an example of the output.
+
+7. Create an IsoTriangle application that prompts the user for the size of an isosceles triangle and then displays the triangle with that many lines. The IsoTriangle application code should include:
+    • the drawBar() method from the chapter.
+    • An addSpaces() method which “prints” spaces.
+  Application output should look similar to the image 'isoTriangle.PNG'
+
+8. Create a function called addUp that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should output 10 because 1 + 2 + 3 + 4 = 10.
+
+9. Write a function called countChar that takes a string and a letter and reports how many of that letter appears in the string. E.g. countChar('hello', 'l') will report 2 l's. Test this function 3 times.
+
+10. Write a function called findString that takes two strings representing a phrase and a word. It should output whether the word is contained somewhere in the phrase.
+  E.g. findString('The devil wears prada', 'evil') >> returns 'found evil'
+  E.g. 
+    let one = 'crazy owl'
+    let two = 'cat'
+    findString(one, two) >> returns 'Did not find cat'
+
+
+
+11. BONUS CHALLENGE (only allowed to use charAt, no other helpful library functions)
+
+Write a function that takes a string version of a number and outputs that number, but with all leading and trailing zeros removed. E.g. '00003.1400' would output '3.14'
